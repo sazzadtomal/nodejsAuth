@@ -24,7 +24,10 @@ app.use(logger);
 app.use(credentials);
 
 // Cross Origin Resource Sharing
-app.use(cors(corsOptions));
+app.use(cors({
+    origin: "https://ibos-frontend.netlify.app",
+    credentials:true
+}));
 
 // built-in middleware to handle urlencoded form data
 app.use(express.urlencoded({ extended: false }));
