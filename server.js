@@ -25,7 +25,7 @@ app.use(credentials);
 
 // Cross Origin Resource Sharing
 app.use(cors({
-    origin: "https://ibos-frontend.netlify.app",
+    origin: ["https://ibos-frontend.netlify.app","http://localhost:5173"],
     credentials:true
 }));
 
